@@ -22,7 +22,7 @@ export function useCreateQuestion(roomId: string) {
       return result;
     },
 
-    // Execura no momento que for feita a chamada p/ API
+    // Executa no momento que for feita a chamada p/ API
     onMutate({ question }) {
       const questions = queryClient.getQueryData<GetRoomQuestionResponse>([
         "get-questions",
